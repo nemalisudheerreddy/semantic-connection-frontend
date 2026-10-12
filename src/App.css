@@ -1,0 +1,153 @@
+.app-shell {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.hero-card,
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.hero-copy,
+.panel-copy {
+  max-width: 48rem;
+  color: var(--muted);
+}
+
+.hero-grid,
+.content-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-grid {
+  margin-top: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.content-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.info-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  background: var(--surface-muted);
+}
+
+.panel {
+  padding: 1.5rem;
+}
+
+.endpoint-box,
+.response-box,
+.success-banner,
+input,
+button {
+  border-radius: 14px;
+}
+
+.endpoint-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+}
+
+.endpoint-method {
+  font-weight: 700;
+  color: #166534;
+  background: #dcfce7;
+  padding: 0.35rem 0.6rem;
+}
+
+.greeting-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.greeting-form label {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.greeting-form input {
+  border: 1px solid var(--border);
+  padding: 0.9rem 1rem;
+  font: inherit;
+  background: var(--surface);
+  color: var(--heading);
+}
+
+.greeting-form button {
+  border: none;
+  padding: 0.95rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  cursor: pointer;
+}
+
+.greeting-form button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.response-box {
+  min-height: 250px;
+  overflow: auto;
+  padding: 1rem;
+  background: #111827;
+  color: #e5eefc;
+  line-height: 1.5;
+}
+
+.error-text {
+  margin-top: 1rem;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.success-banner {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.35rem;
+  background: #eff6ff;
+  color: #1e3a8a;
+  border: 1px solid #bfdbfe;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding-inline: 1rem;
+  }
+
+  .hero-card,
+  .panel {
+    padding: 1.25rem;
+  }
+}

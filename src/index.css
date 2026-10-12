@@ -1,0 +1,76 @@
+:root {
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background:
+    radial-gradient(circle at top, #dbeafe 0%, #eff6ff 35%, #f8fafc 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --border: #dbe4f0;
+  --heading: #0f172a;
+  --muted: #475569;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-muted: #f8fbff;
+  --accent: #4338ca;
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--heading);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+code,
+pre {
+  font-family:
+    'SFMono-Regular', SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
+    'Liberation Mono', monospace;
+}
+
+code {
+  background: #eef2ff;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.45rem;
+}

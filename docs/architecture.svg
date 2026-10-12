@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="340" viewBox="0 0 920 340" role="img" aria-labelledby="title desc">
+  <title id="title">Frontend request flow</title>
+  <desc id="desc">Diagram showing a browser sending a request to a FastAPI service and receiving JSON.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4338ca"/>
+    </marker>
+  </defs>
+  <rect width="920" height="340" rx="24" fill="url(#bg)"/>
+  <rect x="60" y="85" width="220" height="170" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="170" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Browser</text>
+  <text x="170" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">React form collects</text>
+  <text x="170" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">the user name</text>
+  <rect x="102" y="205" width="136" height="30" rx="10" fill="#dbeafe"/>
+  <text x="170" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1d4ed8">POST /api/greet</text>
+  <rect x="640" y="85" width="220" height="170" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="750" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">FastAPI</text>
+  <text x="750" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">Validates input and</text>
+  <text x="750" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#475569">returns JSON response</text>
+  <rect x="682" y="205" width="136" height="30" rx="10" fill="#dcfce7"/>
+  <text x="750" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#166534">message + timestamp</text>
+  <line x1="300" y1="150" x2="620" y2="150" stroke="#4338ca" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="460" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4338ca">Send JSON request</text>
+  <line x1="620" y1="205" x2="300" y2="205" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="460" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6d28d9">Render JSON response</text>
+</svg>
